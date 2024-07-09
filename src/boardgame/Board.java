@@ -35,4 +35,11 @@ public class Board {
 	public Piece piece(Position position) {
 		return pieces[position.getRow()][position.getColumn()];
 	}
+	
+	// Coloca peça em uma determina posição do tabuleiro
+	public void placePiece(Piece piece, Position position) {
+		pieces[position.getRow()][position.getColumn()] = piece;
+		// Acessível pois é protected
+		piece.position = position;
+	}
 }

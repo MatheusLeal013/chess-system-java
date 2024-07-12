@@ -1,5 +1,7 @@
 package boardgame;
 
+import chess.ChessException;
+
 public class Board {
 
 	private int rows;
